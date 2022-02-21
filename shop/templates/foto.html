@@ -1,0 +1,23 @@
+
+{% extends 'shop.html' %}
+
+{% block content %}
+
+<div class ='row tm-row'>
+    <div class ='col-12' style="margin-left: 15%; margin-right: 5%;">
+      <div class="card mb-3">
+        <img src="{{product.image.url}}" class="rounded mx-auto d-block" alt="...">
+      
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p class="card-text">{{product.description}}</p>
+          <p class="card-text"><small class="text-muted">{{product.price}}</small></p>
+        </div>
+      </div>
+  
+    </div>
+   
+  {% endblock %}
+
+       
+
